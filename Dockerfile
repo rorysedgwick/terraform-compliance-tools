@@ -14,9 +14,3 @@ RUN pip3 install \
     boto3==1.11.4 \
     beautifulsoup4==4.8.2 \
     requests==2.22.0
-
-# install and enable .direnv
-RUN curl -sfL https://direnv.net/install.sh | bash
-RUN chmod +x /usr/local/bin/direnv
-
-RUN eval "$(direnv hook bash)"
